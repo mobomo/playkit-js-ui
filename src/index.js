@@ -13,6 +13,8 @@ import * as Components from './components';
 import * as Utils from './utils';
 import style from './styles/style.scss';
 
+//require('preact/devtools');
+
 declare var __VERSION__: string;
 declare var __NAME__: string;
 

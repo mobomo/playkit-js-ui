@@ -15,6 +15,7 @@ import {Backdrop} from '../components/backdrop/backdrop';
 import {PlaybackControls} from '../components/playback-controls';
 import {PlaylistCountdown} from '../components/playlist-countdown';
 import {PlaylistNextScreen} from '../components/playlist-next-screen';
+import {VoaAudioDownloadControl} from '../components/voa-audio-download';
 
 /**
  * Playback ui interface
@@ -42,6 +43,7 @@ export function voaAudioUi(props: any): React$Element<any> {
           </div>
           <div className={style.rightControls}>
             <VolumeControl player={props.player} />
+            <VoaAudioDownloadControl player={props.player} />
           </div>
         </BottomBar>
       </div>
