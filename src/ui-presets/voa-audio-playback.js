@@ -36,7 +36,7 @@ export function voaAudioUi(props: any): React$Element<any> {
         <PlaybackControls player={props.player} />
         {PlaylistNextScreen.shouldRender(props) ? <PlaylistNextScreen player={props.player} /> : undefined}
         <BottomBar>
-          <SeekBarPlaybackContainer showFramePreview showTimeBubble player={props.player} playerContainer={props.playerContainer} />
+          <SeekBarPlaybackContainer showTimeBubble player={props.player} playerContainer={props.playerContainer} />
           <div className={style.leftControls}>
             <PlaybackControls player={props.player} />
             <TimeDisplayPlaybackContainer format="current / total" />
